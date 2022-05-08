@@ -23,9 +23,9 @@ const makeObjectDeepCopy = (obj) => {
         return clonedArray;
     }
 
-    for (const key in obj) {
+    Object.keys(obj).forEach((key) => {
         clonedObject[key] = makeObjectDeepCopy(obj[key]);
-    }
+    });
 
     return clonedObject;
 };
