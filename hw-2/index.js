@@ -2,7 +2,7 @@ const obj = {
     number: 1,
     string: 'smth',
     array: [1, 2, 3]
-}
+};
 
 const makeObjectDeepCopy = (obj) => {
     const clonedObject = {};
