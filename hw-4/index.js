@@ -55,19 +55,19 @@ class Calculator {
         this.secondValue = num;
     }
 
-    logSum() {
+    logSum = () => {
         console.log(this.firstValue + this.secondValue);
     }
 
-    logMul() {
+    logMul = () =>  {
         console.log(this.firstValue * this.secondValue);
     }
 
-    logSub() {
+    logSub = () =>  {
         console.log(this.firstValue - this.secondValue);
     }
 
-    logDiv() {
+    logDiv = () =>  {
         if (this.secondValue === 0) {
             throw new Error('Cannot divide by 0');
         }
