@@ -22,11 +22,7 @@ const concatStrings = (str2, separator = '') => {
 };
 
 const isValid = (num) => {
-    if (typeof num !== 'number' || typeof num === 'bigint') {
-        return false;
-    }
-
-    return true;
+    return typeof num === 'number';
 };
 
 class Calculator {
