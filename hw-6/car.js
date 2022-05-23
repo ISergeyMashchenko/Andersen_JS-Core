@@ -84,8 +84,6 @@ class Car {
     start() {
         if (this.#isStarted) {
             throw new Error('Машина уже заведена');
-        } else {
-            this.#isStarted = true;
         }
     }
 
