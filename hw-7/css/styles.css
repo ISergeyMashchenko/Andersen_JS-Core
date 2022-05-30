@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #a7a7a7, #d1d1d1);
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 100px);
+}
+
+.link {
+    margin: 20px 0;
+    display: flex;
+}
+
+.link a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.calculator>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #000000;
+    outline: none;
+    background-color: #e6e6e6;
+}
+
+.calculator>button:hover {
+    background-color: #888888;
+    transition: 0.5s all;
+}
+
+.span-two-rows {
+    grid-row: span 2;
+}
+
+.display {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display .memory-display {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.display .previous-operand {
+    text-align: right;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.display .current-operand {
+    text-align: right;
+    color: #ffffff;
+    font-size: 2.5rem;
+}

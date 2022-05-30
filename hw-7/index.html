@@ -12,30 +12,44 @@
 
 <body>
     <div class="container">
-        <div class="display">
-            <div class="previous-operand"></div>
-            <div class="current-operand"></div>
+
+        <div class="link">
+            <a data-bookmark href="#">Добавить в Закладки</a>
         </div>
 
-        <button class="number">7</button>
-        <button class="number">8</button>
-        <button class="number">9</button>
-        <button class="switch-sign">+/-</button>
-        <button class="delete">&larr;</button>
-        <button class="number">4</button>
-        <button class="number">5</button>
-        <button class="number">6</button>
-        <button class="operation">*</button>
-        <button class="operation">÷</button>
-        <button class="number">1</button>
-        <button class="number">2</button>
-        <button class="number">3</button>
-        <button class="operation">-</button>
-        <button class="equals span-two">=</button>
-        <button class="clear-all">AC</button>
-        <button class="number">0</button>
-        <button class="number">.</button>
-        <button class="operation">+</button>
+        <div class="calculator">
+            <div class="display">
+                <div data-memory-display class="memory-display">M: <span id="memory-value">0</span></div>
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
+
+            <button data-ms class="memory-btn m">MS</button>
+            <button data-mc class="memory-btn mc">MC</button>
+            <button data-mr class="memory-btn mr">MR</button>
+            <button data-memory-plus class="memory-btn">M+</button>
+            <button data-memory-minus class="memory-btn">M-</button>
+
+            <button data-number class="number">7</button>
+            <button data-number class="number">8</button>
+            <button data-number class="number">9</button>
+            <button data-switch-sign class="switch-sign">+/-</button>
+            <button data-delete class="delete">&larr;</button>
+            <button data-number class="number">4</button>
+            <button data-number class="number">5</button>
+            <button data-number class="number">6</button>
+            <button data-operation class="operation">*</button>
+            <button data-operation class="operation">÷</button>
+            <button data-number class="number">1</button>
+            <button data-number class="number">2</button>
+            <button data-number class="number">3</button>
+            <button data-operation class=" operation">-</button>
+            <button data-equal class="equals span-two-rows">=</button>
+            <button data-clear-all class="clear-all">AC</button>
+            <button data-number class="number">0</button>
+            <button data-number class="number">.</button>
+            <button data-operation class="operation">+</button>
+        </div>
     </div>
 </body>
 
